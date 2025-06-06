@@ -131,7 +131,7 @@ p {
 }
 
 /* Carousel */
-/* .carousel-wrapper {
+.carousel-wrapper {
   overflow: hidden;
   width: 100%;
 }
@@ -147,7 +147,7 @@ p {
 }
 .carousel-item-custom img {
   width: 100%;
-  height: 600px;
+  height: 560px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -156,60 +156,15 @@ p {
   100% { transform: translateX(-50%); }
 }
 @media (max-width: 992px) {
-  .carousel-item-custom { width: 300px; }
+  .carousel-item-custom { width: 250px; }
+  .carousel-item-custom img {width: 100%; height: 350px;}
+
 }
 @media (max-width: 768px) {
-  .carousel-item-custom { width: 100%; }
-} */
+  .carousel-item-custom { width: 140px; height: 20%;}
+  .carousel-item-custom img {width: 100%; height: 190px;}
+}
  
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 1rem;
-  animation: scroll-carrusel 30s linear infinite;
-  will-change: transform;
-}
-
-.carousel-item-custom {
-  flex: 0 0 auto;
-  width: 30%; /* Por defecto muestra ~3 cartas */
-}
-
-.carousel-item-custom img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsivo */
-@media (max-width: 992px) {
-  .carousel-item-custom {
-    width: 45%; /* 2 cartas en tablet */
-  }
-}
-
-@media (max-width: 576px) {
-  .carousel-item-custom {
-    width: 90%; /* 1 carta en móvil */
-  }
-}
-
-/* Animación para loop infinito */
-@keyframes scroll-carrusel {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 
 /* Footer */
 footer {
