@@ -84,4 +84,4 @@ async function fetchPack() {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("reload-btn").addEventListener("click", fetchPack);
-});
+}); 
