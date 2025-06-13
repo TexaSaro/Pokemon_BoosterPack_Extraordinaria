@@ -141,20 +141,31 @@ p {
   padding: 2rem;
 }
 
+/* POKEBALL */
 .pokeball-container {
   position: fixed;
-  bottom: -35vh;
-  right: -15vw;
-  width: 60vw;
-  height: 60vw;
-  z-index: -1;
-  pointer-events: none;
-  transform: rotate(25deg);
+  bottom: -50px; 
+  left: -50px;
+  width: 250px; 
+  height: 250px;
+  opacity: 0.1; 
+  z-index: -1; 
+  animation: rotatePokeball 30s linear infinite; 
+  pointer-events: none; 
 }
+
 .pokeball-container img {
   width: 100%;
-  height: auto;
-  opacity: 0.3;
+  height: 100%;
+}
+
+@keyframes rotatePokeball {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Carousel */
