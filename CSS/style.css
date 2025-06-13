@@ -254,7 +254,7 @@ footer {
   padding: 0.75rem 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 100;
+  font-weight: 500;
   transition: background 0.3s;
 }
 .btn-home:hover {
