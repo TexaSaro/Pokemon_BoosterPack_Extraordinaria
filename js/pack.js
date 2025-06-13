@@ -65,9 +65,9 @@ async function fetchPack() {
 
       const cardHtml = `
         <div class="col-6 col-md-2 text-center mb-4">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm card-hover-effect">
             <img src="${card.images.small}" class="card-img-top" alt="${card.name}">
-            <div class="card-body p-2">
+            <div class="card-body p-0">
               <p class="mb-0">${card.name}</p>
             </div>
           </div>
